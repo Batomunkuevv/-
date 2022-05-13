@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('html/head.html', { 'title': 'Главная' })
+
+    <body>
+        <div class="wrapper">
+            @@include('html/header.html',{})
+            <main class="page">
+                @@include('html/main/mainscreen.html',{}) @@include('html/main/preparation.html',{})
+                @@include('html/main/menu.html',{}) @@include('html/main/how.html')
+                @@include('html/main/howmany.html',{}) @@include('html/main/about.html',{})
+            </main>
+            @@include('html/main/modal.html') @@include('html/footer.html',{})
+        </div>
+        <!--*===================== Scripts======================== -->
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/jquery.maskedinput.min.js"></script>
+
+        <script src="js/script.min.js"></script>
+        <!--* =================================================== -->
+    </body>
+</html>
